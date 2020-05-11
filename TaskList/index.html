@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv=“Pragma” content=”no-cache”>
+    <meta http-equiv=“Expires” content=”-1″>
+    <meta http-equiv=“CACHE-CONTROL” content=”NO-CACHE”>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" type="text/css" />
+    <title>TaskList</title>
+  </head>
+  <body>
+    <!-- Image and text -->
+    <nav class="navbar navbar-light bg-light">
+      <div id="homelink" class="navbar-brand" style="font-size:40px">
+        <img
+          src="./img/icon.png"
+          width="60"
+          height="60"
+          class="d-inline-block align-top"
+          alt=""
+        />
+        TaskList
+        <button type="button" id="btnClear" class="btnClear btn-danger">CLEAR</button>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="todo-list">
+        <h2>TASKLIST</h2>
+        <ul id="taskList"></ul>
+        <div style="background-color:white;padding-top:10px;">
+        <div class="input-group">
+                <input id="textInput" type="text" maxlength="20" class="form-control" placeholder="Add new task..."/>
+                <button id="addNew" class="btnAdd btn-success">&#10010</button>
+        </div></div>
+      </div>
+      
+    </div>
+
+    <script src="./appScript.js"></script>
+  </body>
+</html>

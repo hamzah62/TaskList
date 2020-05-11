@@ -1,0 +1,111 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Amatic SC", sans-serif;
+}
+
+.container-fluid {
+  text-align: center;
+}
+
+.todo-list {
+  background-color: yellow;
+  width: 40%;
+  margin: 10px auto;
+  padding: 0;
+  color: black;
+}
+
+.todo-list ul {
+  list-style: none;
+  padding: 10px;
+  color: black;
+}
+
+h2 {
+  font-size: 50px;
+  font-weight: 700;
+  padding: 12px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  background-color: rgb(197, 197, 21);
+}
+
+.todo-list ul li {
+  letter-spacing: 0.7px;
+  font-weight: 700;
+  font-size: 27px;
+  padding: 7px;
+  margin: 2px;
+  text-align: left;
+  position: relative;
+  background-color: yellow;
+  border-bottom: 1px solid black;
+}
+
+.btnCheck {
+  position: absolute;
+  right: 45px;
+  top: 10px;
+  border-radius: 50%;
+}
+
+.btn-success {
+  border: none;
+}
+
+nav{
+    position: relative;
+}
+.btnClear{
+  position: absolute;
+  right:1%;
+  border-radius: 10px;
+  font-size:35px;
+}
+
+.btnRemove  {
+  position: absolute;
+  top: 10px;
+  right: 5px;
+  border-radius: 50%;
+}
+
+.btn-danger {
+  border: none;
+}
+
+.btnAdd {
+  border-top-right-radius: 5px;
+}
+#textInput {
+  font-weight: 700;
+  font-size: 27px;
+  margin-right: 1%;
+  color: black;
+}
+
+button {
+  font-size: 22px;
+}
+
+
+@media only screen and (max-width: 375px) {
+  .todo-list {
+    width: 100%;
+  }
+  .btnClear{
+      right:5%;
+  }
+}
+
+@media only screen and(max-width:800px){
+    .todo-list {
+    width: 60%;
+  }
+  .btnClear{
+      right:5%;
+  }
+}
+
